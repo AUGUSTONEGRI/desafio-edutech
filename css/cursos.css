@@ -1,0 +1,306 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    /* background-image: linear-gradient(rgb(51, 235, 60), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(228, 228, 250), rgb(0, 0, 255)); */
+}
+
+                /* cabeçalho */
+
+.cabecalho{
+    background-image: linear-gradient(rgb(51, 235, 60), rgb(255, 255, 255));
+    padding: 10px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+                    /* cursos */
+
+div {
+    width: 52%;
+    height: auto;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+}
+
+div:hover {
+    background-color: rgb(191, 235, 187);
+    width: 51%;
+    height: 42px;
+    transition: 0.50s;
+}
+
+.log-curso {
+    width: 30px;
+    display: inline-block;
+    
+}
+
+p {
+    display: inline-block;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-a:hover {
+    color: rgb(78, 78, 204);
+    font-size: 32px;
+    transition: 0.50s;
+}
+
+
+                    /* responsividade */
+
+/* celular */
+
+@media screen and (min-width: 0px) and (max-width: 420px){
+
+    .h1-cursos {
+        font-size: 26px;
+        text-align: center;
+        margin: 35px 0 30px 0;
+    }
+
+    div {
+        margin-left: 20%;
+    }
+
+    .cabecalho {
+        text-align: center;
+    }
+
+    .log-cabecalho {
+        width: 100px;
+        height: 90px;
+
+        display: block;
+        margin-left: 35%;
+        margin-bottom: 10px;
+    }
+
+    .item-a1 {
+        margin-right: 2%;
+    }
+
+    .sobre-alura {
+        background-image: linear-gradient(#ffffff, rgb(0, 0, 255));
+        text-align: center;
+        padding: 0 0 40px 0;
+    }
+
+    .img-alura {
+        width: 100px;
+        margin-top: 30px;
+    }
+
+    .h1-alura {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0 20px 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0 15px 0 15px;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: rgb(0, 0, 255); 
+        padding: 0% 5% 10% 5%;
+    }
+    
+    .conheca-alura {
+        width: 50%;
+        height: auto;
+        font-size: 20px;
+        
+        border: 1px solid white;
+        color: white;
+        border-radius: 10px;
+    
+        margin-left: 20%;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }
+
+}
+
+/* tablet */
+
+@media screen and (min-width: 421px) and (max-width: 769px){
+
+    .h1-cursos {
+        font-size: 32px;
+        text-align: center;
+        margin: 35px 0 30px 0;
+    }
+
+    div {
+        margin-left: 25%;
+        
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho .log-cabecalho{
+        width: 130px;
+        height: 130px;
+        margin-left: 5%;
+    }
+
+    .item-a1 {
+        margin-left: 40%;
+        margin-right: 2%;
+    }
+
+    .section-cursos {
+        margin-top: 5%;
+    }
+
+    .sobre-alura {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 255));
+        text-align: center;
+    }
+
+    .img-alura {
+        width: 100px;
+        margin-top: 30px;
+    }
+
+    .h1-alura {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0 20px 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0 20px 0 20px;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: rgb(0, 0, 255); 
+        padding: 5% 5% 10% 5%;
+    }
+    
+    .conheca-alura {
+        width: 50%;
+        height: auto;
+        font-size: 20px;
+        
+        border: 1px solid white;
+        color: white;
+        border-radius: 10px;
+    
+        margin-left: 20%;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }
+
+}
+
+/* computadores */
+
+@media screen and (min-width: 770px) {
+    div {
+        margin-left: 25%;
+        
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .log-cabecalho{
+        width: 130px;
+        height: 130px;
+        margin-left: 13%;        
+    }
+
+    .item-a1 {
+        margin-left: 55%;
+        margin-right: 2%;
+    }
+
+    .h1-cursos {
+        font-size: 35px;
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+
+    .section-cursos {
+        margin-bottom: 5%;
+    }
+
+    .sobre-alura {
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(87, 87, 201), rgb(0, 0, 255));
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-alura {
+        width: 1000px;
+        margin: 0 80px 0 60px;
+    }
+
+    .h1-alura {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px 0 20px 0;
+        color: white;
+        margin: 10% 50px 0 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: black;
+        margin: 50px 100px 50px 0;
+        line-height: 30px;
+        font-weight: bold
+    }
+
+    article {
+        background-color: rgb(0, 0, 255); 
+        padding: 0 5% 3% 5%;
+    }
+    
+    .conheca-alura {
+        width: 40%;
+        height: auto;
+        font-size: 20px;
+        
+        border: 1px solid white;
+        color: white;
+        border-radius: 10px;
+    
+        margin-left: 28%;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }
+
+    .conheca-alura:hover {
+        background-color: rgb(50, 50, 252); 
+        padding: 12px 15px 12px 15px;
+        transition: 0.50s;
+    }
+
+}
